@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "newLine": "lf",
+    "allowJs": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "moduleresolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "sketchilng-core": [".packages/core/src"],
+      "sketchilng-delta": [".packages/delta/src"],
+      "sketchilng-react": [".packages/react/src"],
+      "sketchilng-utils": [".packages/utils/src"]
+    },
+    "include": ["packages/*/src"]
+  }
+}
