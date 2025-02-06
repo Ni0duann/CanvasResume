@@ -1,23 +1,55 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    // 指定 ECMAScript 目标版本
+    "target": "ES2015",
+    // 指定要包含在编译中的库文件
     "lib": ["dom", "dom.iterable", "esnext"],
+    // 指定编译后的换行符
     "newLine": "lf",
+    // 允许编译 JavaScript 文件
     "allowJs": true,
-    "declaration": true,
+    // 跳过库文件的类型检查
     "skipLibCheck": true,
+    // 启用 ES 模块互操作性
     "esModuleInterop": true,
+    // 启用对 for..of 等语法的降级迭代支持
     "downlevelIteration": true,
-    "moduleresolution": "node",
+    // 允许合成默认导入
+    "allowSyntheticDefaultImports": true,
+    // 启用实验性的装饰器特性
+    "experimentalDecorators": true,
+    // 生成声明文件
+    "declaration": true,
+    // 启用所有严格类型检查选项
+    "strict": true,
+    // 禁用隐式的 any 类型
+    "noImplicitAny": true,
+    // 启用严格的空值检查
+    "strictNullChecks": true,
+    // 强制文件名一致的大小写
+    "forceConsistentCasingInFileNames": true,
+    // 禁止 switch 语句中的 fallthrough 情况
+    "noFallthroughCasesInSwitch": true,
+    // 指定模块代码生成方式
+    "module": "esnext",
+    // 指定模块解析策略
+    "moduleResolution": "node",
+    // 允许从 JSON 文件中导入模块
     "resolveJsonModule": true,
+    // 启用隔离模块
     "isolatedModules": true,
+    // 指定 JSX 代码的编译方式
     "jsx": "react-jsx",
+    // 配置模块路径映射
     "paths": {
-      "sketchilng-core": [".packages/core/src"],
-      "sketchilng-delta": [".packages/delta/src"],
-      "sketchilng-react": [".packages/react/src"],
-      "sketchilng-utils": [".packages/utils/src"]
-    },
-    "include": ["packages/*/src"]
-  }
+      "sketching-core": ["./packages/core/src"],
+      "sketching-delta": ["./packages/delta/src"],
+      "sketching-plugin": ["./packages/plugin/src"],
+      "sketching-utils": ["./packages/utils/src"]
+    }
+  },
+  // 指定要包含在编译中的文件或目录
+  "include": [
+    "packages/*/src"
+  ]
 }
